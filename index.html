@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsivo_tablet.css">
     <link rel="stylesheet" href="style/responsivo_celular.css">
+    <script src="js/app.js"></script>
     <title>Decodificador</title>
 </head>
 <body>
     <main>
         <section>
-            <div class="logo_a">
+            <div class="logo_a center">
                 <img src="img/Vector.png" alt="logo">
             </div>
             <div class="parte_digitar">
@@ -19,20 +20,24 @@
                 <div>
                     <p class="texto_alerta"><img src="img/Vector.svg">Apenas letras minúsculas e sem acento.</p>
                     <div class="div_botao">
-                        <button class="botao criptografar">Criptografar</button>
-                        <button class="botao descriptografar">Descriptografar</button>
+                        <button class="botao criptografar" onclick="criptografar()">Criptografar</button>
+                        <button class="botao descriptografar" onclick="descriptografar()">Descriptografar</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <aside>
-            <div class="div_resultado">
+        <aside class="center">
+            <div class="div_resultado" id="div_resultado">
                 <img class="img_aside" src="img/High quality products 1 1.png">
                 <article>
                     <h1>Nenhuma mensagem encontrada</h1>
                     <p class="aside_text">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </article>
+            </div>
+            <div class="div_resultado_copiar" id="div_resultado_copiar">
+                <p id="resultado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui est quod exercitationem culpa maiores tenetur voluptatibus, quis accusamus debitis temporibus harum, labore ea illo. Repellendus nobis quasi doloribus laudantium nostrum.</p>
+                <button class="botao copiar descriptografar">Copiar</button>
             </div>
         </aside>
     </main>
