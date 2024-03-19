@@ -1,0 +1,52 @@
+
+
+@media (max-width: 769px) {
+
+
+    main{
+        flex-direction: column;
+        padding: 73.42px 40px 40px 40px;
+    }
+
+    section{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .img_aside{
+        display: none;
+    }
+
+    .parte_digitar{
+        margin-top: 0px;
+        height: 100%;
+        margin-bottom: 64px;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    article{
+        width: 688px;
+        height: 133px;
+        margin-top: 0px;
+        padding: 32px;
+        gap: 16px;
+        box-sizing: border-box;
+    }
+
+    .div_resultado{
+        width: 688px;
+        height: 133px;
+    }
+
+    .logo_a{
+        width: 31.09px;
+        height: 50.58px;
+    }
+
+    .texto_alerta{
+        font-size: 0.75rem;
+    }
+}
