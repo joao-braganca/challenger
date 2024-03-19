@@ -48,12 +48,14 @@ section{
 
 .digitar{
     width: 680px;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 48px;
     text-align: left;
     color: #0A3871;
     background-color: transparent;
     border: none;
+    word-wrap: break-word;
+    height: 230px;
 }
 .digitar::placeholder{
     color: #0A3871;
@@ -144,6 +146,7 @@ h1{
 .copiar{
     width: 336px;
     height: 67px;
+    background-color: transparent;
 }
 
 .div_resultado_copiar{
@@ -167,4 +170,6 @@ h1{
 
 #resultado{
     color: #495057;
+    font-size: 1.5rem;
+    line-height: 36px;
 }

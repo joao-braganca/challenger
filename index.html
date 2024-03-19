@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsivo_tablet.css">
     <link rel="stylesheet" href="style/responsivo_celular.css">
-    <script src="js/app.js"></script>
+    <script src="js/criptografar.js"></script>
+    <script src="js/descriptografar.js"></script>
+    <script src="js/copiar.js"></script>
     <title>Decodificador</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
                 <img src="img/Vector.png" alt="logo">
             </div>
             <div class="parte_digitar">
-                <input type="text" class="digitar" placeholder="Digite seu texto">
+                <textarea class="digitar" placeholder="Digite seu texto" id="texto"></textarea>
                 <div>
                     <p class="texto_alerta"><img src="img/Vector.svg">Apenas letras minúsculas e sem acento.</p>
                     <div class="div_botao">
@@ -36,8 +38,8 @@
                 </article>
             </div>
             <div class="div_resultado_copiar" id="div_resultado_copiar">
-                <p id="resultado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui est quod exercitationem culpa maiores tenetur voluptatibus, quis accusamus debitis temporibus harum, labore ea illo. Repellendus nobis quasi doloribus laudantium nostrum.</p>
-                <button class="botao copiar descriptografar">Copiar</button>
+                <p id="resultado"></p>
+                <button class="botao copiar descriptografar" id="copiar" onclick="copia()">Copiar</button>
             </div>
         </aside>
     </main>
